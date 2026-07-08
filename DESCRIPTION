@@ -1,0 +1,55 @@
+Package: metasurvey.explorer.backend
+Title: R Client for the 'metasurvey' Recipe and Workflow API
+Version: 0.1.0
+URL: https://metasurveyr.github.io/metasurvey.explorer.backend/,
+    https://github.com/metasurveyr/metasurvey.explorer.backend
+BugReports: https://github.com/metasurveyr/metasurvey.explorer.backend/issues
+Authors@R:
+    c(
+        person(
+            given = "Mauro",
+            family = "Loprete",
+            role = c("aut", "cre"),
+            email = "mauro.loprete@icloud.com",
+            comment = c(ORCID = "0000-0003-1560-0183")
+        ),
+        person(
+            given = "Natalia",
+            family = "da Silva",
+            role = "aut",
+            email = "natalia.dasilva@fcea.edu.uy",
+            comment = c(ORCID = "0000-0002-6031-7451")
+        ),
+        person(
+            given = "Fabricio",
+            family = "Machado",
+            role = "aut",
+            email = "fabricio.mch.slv@gmail.com",
+            comment = c(ORCID = "0009-0008-2653-9166")
+        )
+    )
+Description: HTTP client for the 'metasurvey' REST API, part of the 'metasurvey'
+    ecosystem. Lets R users publish, discover, and share recipes and workflows
+    against a deployed 'metasurvey' API server, and manage authentication,
+    stars, and comments. On load it registers providers so that the local
+    'metasurvey.core' backend and 'metasurvey.anda' variable lookups can route
+    to the remote API.
+License: GPL (>= 3)
+Depends:
+    R (>= 4.1)
+Imports:
+    metasurvey.core,
+    httr2 (>= 1.0.0),
+    jsonlite (>= 1.7.2)
+Suggests:
+    withr,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Remotes:
+    metasurveyr/metasurvey.core
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
