@@ -340,6 +340,61 @@ api_logout <- function() {
   invisible(NULL)
 }
 
+# ── Admin ────────────────────────────────────────────────────────────────────
+
+#' @title List pending users (admin)
+#' @description Fetch the list of users awaiting review. Requires an admin
+#'   token (managed internally after \code{api_login()}).
+#' @return The API response (typically a list of pending users).
+#' @export
+#' @examples
+#' \dontrun{
+#' api_pending_users()
+#' }
+#' @family api-admin
+api_pending_users <- function() {
+  api_request("admin/pending-users", method = "GET")
+}
+
+#' @title Approve a pending user (admin)
+#' @param email Character email of the user to approve.
+#' @return The API response.
+#' @export
+#' @examples
+#' \dontrun{
+#' api_approve_user("ana@example.com")
+#' }
+#' @family api-admin
+api_approve_user <- function(email) {
+  api_request(paste0("admin/approve/", email), method = "POST")
+}
+
+#' @title Reject a pending user (admin)
+#' @param email Character email of the user to reject.
+#' @return The API response.
+#' @export
+#' @examples
+#' \dontrun{
+#' api_reject_user("ana@example.com")
+#' }
+#' @family api-admin
+api_reject_user <- function(email) {
+  api_request(paste0("admin/reject/", email), method = "POST")
+}
+
+#' @title Generate an API token (admin)
+#' @description Request a fresh API token from the server (admin-only).
+#' @return The API response containing the generated token.
+#' @export
+#' @examples
+#' \dontrun{
+#' api_generate_token()
+#' }
+#' @family api-admin
+api_generate_token <- function() {
+  api_request("auth/generate-token", method = "POST")
+}
+
 # ── ID validation ──────────────────────────────────────────────────────────
 
 #' @keywords internal
