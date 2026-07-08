@@ -4,12 +4,14 @@
 <url><loc>/authors.html</loc></url>
 <url><loc>/index.html</loc></url>
 <url><loc>/news/index.html</loc></url>
+<url><loc>/reference/api_approve_user.html</loc></url>
 <url><loc>/reference/api_client.html</loc></url>
 <url><loc>/reference/api_comment_recipe.html</loc></url>
 <url><loc>/reference/api_comment_workflow.html</loc></url>
 <url><loc>/reference/api_delete_comment.html</loc></url>
 <url><loc>/reference/api_download_recipe.html</loc></url>
 <url><loc>/reference/api_download_workflow.html</loc></url>
+<url><loc>/reference/api_generate_token.html</loc></url>
 <url><loc>/reference/api_get_anda_variables.html</loc></url>
 <url><loc>/reference/api_get_recipe.html</loc></url>
 <url><loc>/reference/api_get_recipe_comments.html</loc></url>
@@ -23,10 +25,12 @@
 <url><loc>/reference/api_login.html</loc></url>
 <url><loc>/reference/api_logout.html</loc></url>
 <url><loc>/reference/api_me.html</loc></url>
+<url><loc>/reference/api_pending_users.html</loc></url>
 <url><loc>/reference/api_publish_recipe.html</loc></url>
 <url><loc>/reference/api_publish_workflow.html</loc></url>
 <url><loc>/reference/api_refresh_token.html</loc></url>
 <url><loc>/reference/api_register.html</loc></url>
+<url><loc>/reference/api_reject_user.html</loc></url>
 <url><loc>/reference/api_star_recipe.html</loc></url>
 <url><loc>/reference/api_star_workflow.html</loc></url>
 <url><loc>/reference/api_track_download.html</loc></url>
